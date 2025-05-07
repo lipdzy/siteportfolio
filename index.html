@@ -1,646 +1,311 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dezain Code - Desenvolvimento de Sites</title>
+    <title>Elegance Boutique | Moda Exclusiva</title>
     <link rel="stylesheet" href="style.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <!-- Botão do WhatsApp Fixo -->
-    <a href="https://wa.me/5583991816152?text=Ol%C3%A1%2C%20quero%20saber%20mais%20sobre%20seus%20servi%C3%A7os%20de%20desenvolvimento%20web!" class="whatsapp-btn" target="_blank">
-        <i class="fab fa-whatsapp whatsapp-icon"></i>
-    </a>
-
     <!-- Header -->
     <header>
-        <div class="container header-container">
+        <div class="container">
             <div class="logo">
-                <i class="fas fa-code logo-icon"></i>
-                <span>Dezain Code</span>
+                <h1>Elegance</h1>
+                <p>Boutique</p>
             </div>
             <nav>
-                <ul class="nav-links">
-                    <li><a href="#home">Início</a></li>
-                    <li><a href="#plans">Planos</a></li>
-                    <li><a href="#showcase">Portfolio</a></li>
-                    <li><a href="#benefits">Benefícios</a></li>
-                    <li><a href="#briefing">Briefing</a></li>
-                    <li><a href="#faq">Dúvidas</a></li>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#colecoes">Coleções</a></li>
+                    <li><a href="#contato">Contato</a></li>
                 </ul>
+                <!-- Botão de fechar para o menu mobile -->
+                <div class="menu-close">
+                    <i class="fas fa-times"></i>
+                </div>
             </nav>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
         </div>
     </header>
 
-    <!-- Hero Section -->
-    <section id="home" class="tech-bg hero">
-        <div class="tech-grid"></div>
+    <!-- Overlay do menu mobile -->
+    <div class="menu-overlay"></div>
+
+    <!-- Home Section -->
+    <section id="home" class="hero">
+        <div class="hero-background">
+            <!-- Aqui você deve adicionar a imagem da frente da loja física -->
+            <img src="https://images.unsplash.com/photo-1567401893414-76b7b1e5a7a5?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&h=800&q=80" alt="Fachada Elegance Boutique">
+        </div>
+        <div class="hero-overlay"></div>
         <div class="container">
             <div class="hero-content">
-                <h1>Serviço de Desenvolvimento de Sites</h1>
-                <p>Transforme sua visão em resultados com sites que funcionam 24/7</p>
-                <div class="cta-container">
-                    <a href="#plans" class="btn btn-primary pulse-animation">QUERO VENDER MAIS <i class="fas fa-arrow-right"></i></a>
-                    <a href="https://wa.me/5583991816152?text=Ol%C3%A1%2C%20preciso%20de%20um%20site%20que%20venda%20para%20meu%20neg%C3%B3cio!" class="btn btn-outline" target="_blank">FALAR COM ESPECIALISTA</a>
-                </div>
-                <div class="urgency-tag">
-                    <i class="fas fa-bolt"></i> Promoção por tempo limitado: 60% OFF nos planos contratados até 15/05
-                </div>
+                <h2>Elegância e Sofisticação</h2>
+                <p>Descubra nossa exclusiva coleção de moda de luxo</p>
+                <a href="#colecoes" class="btn">Ver Coleção</a>
             </div>
         </div>
     </section>
 
-    <!-- Planos Section -->
-    <section id="plans" class="plans">
+    <!-- Sobre Section -->
+    <section id="sobre" class="sobre">
         <div class="container">
-            <div class="section-title">
-                <h2>Nossos Planos</h2>
-                <p>Escolha o plano ideal para o seu negócio e comece a destacar sua marca no mundo digital.</p>
+            <div class="section-header">
+                <h2>Sobre a Elegance Boutique</h2>
+                <div class="divider"></div>
             </div>
-            <div class="plans-container">
-                <!-- Plano PRO -->
-                <div class="plan-card">
-                    <div class="popular-tag">Mais Vendido</div>
-                    <div class="plan-header">
-                        <div class="plan-title">One-Page</div>
-                        <div class="plan-price">De <span class="old-price">R$500</span> por <span class="new-price">R$200</span></div>
-                        <div class="plan-subtitle">Solução completa para presença digital</div>
-                    </div>
-                    <div class="plan-features">
-                        <div class="feature-item">
-                            <i class="fas fa-check-circle feature-icon"></i>
-                            <div class="feature-text"><strong>Logo:</strong> Ícone para logo com mensagem de boas-vindas</div>
-                        </div>
-                        <div class="feature-item">
-                            <i class="fas fa-check-circle feature-icon"></i>
-                            <div class="feature-text"><strong>Links:</strong> Instagram, TikTok, localização</div>
-                        </div>
-                        <div class="feature-item">
-                            <i class="fas fa-check-circle feature-icon"></i>
-                            <div class="feature-text"><strong>Design:</strong> Design exclusivo que combina com o estilo do seu negócio</div>
-                        </div>
-                        <div class="feature-item">
-                            <i class="fas fa-check-circle feature-icon"></i>
-                            <div class="feature-text">Formulário de perguntas com direcionamento ao WhatsApp</div>
-                        </div>
-                        <div class="feature-item">
-                            <i class="fas fa-check-circle feature-icon"></i>
-                            <div class="feature-text">Layout responsivo para todos dispositivos</div>
-                        </div>
-                    </div>
-                    <div class="plan-footer">
-                        <a href="https://wa.me/5583991816152?text=Ol%C3%A1%2C%20gostaria%20de%20solicitar%20uma%20proposta%20para%20o%20Site%20PRO!" class="btn btn-primary" target="_blank">QUERO ESTE PLANO <i class="fas fa-arrow-right"></i></a>
-                        <a href="#showcase" class="view-demo">Ver demonstração</a>
-                    </div>
+            <div class="sobre-content">
+                <div class="sobre-img">
+                    <img src="https://images.unsplash.com/photo-1567401893414-76b7b1e5a7a5?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&h=800&q=80" alt="Loja Elegance Boutique">
                 </div>
-
-                <!-- Plano PORTFOLIO -->
-                <div class="plan-card portfolio-card">
-                    <div class="plan-header" style="background: linear-gradient(135deg, #ff7700, #ff9500);">
-                        <div class="plan-title">Portfolio</div>
-                        <div class="plan-price">De <span class="old-price">R$2750</span> por <span class="new-price">R$1200</span></div>
-                        <div class="plan-subtitle">Solução completa para exibir seus trabalhos</div>
-                    </div>
-                    <div class="plan-features">
-                        <div class="feature-item">
-                            <i class="fas fa-check-circle feature-icon"></i>
-                            <div class="feature-text"><strong>Tudo do plano One-Page</strong> + recursos avançados</div>
-                        </div>
-                        <div class="feature-item">
-                            <i class="fas fa-check-circle feature-icon"></i>
-                            <div class="feature-text"><strong>Biografia:</strong> Seção personalizada sobre sua loja/marca</div>
-                        </div>
-                        <div class="feature-item">
-                            <i class="fas fa-check-circle feature-icon"></i>
-                            <div class="feature-text"><strong>Galeria:</strong> Exibição de fotos dos produtos/trabalhos realizados</div>
-                        </div>
-                        <div class="feature-item">
-                            <i class="fas fa-check-circle feature-icon"></i>
-                            <div class="feature-text"><strong>SEO:</strong> Estratégias para melhorar seu posicionamento nas buscas</div>
-                        </div>
-                        <div class="feature-item">
-                            <i class="fas fa-check-circle feature-icon"></i>
-                            <div class="feature-text"><strong>Design:</strong> Layout estratégico para destacar seus melhores trabalhos</div>
-                        </div>
-                    </div>
-                    <div class="plan-footer">
-                        <a href="https://wa.me/5583991816152?text=Ol%C3%A1%2C%20gostaria%20de%20solicitar%20uma%20proposta%20para%20o%20Site%20Portfolio!" class="btn btn-portfolio" target="_blank">QUERO ESTE PLANO <i class="fas fa-arrow-right"></i></a>
-                        <a href="#portfolio-showcase" class="view-demo">Ver demonstração</a>
-                    </div>
+                <div class="sobre-text">
+                    <h3>Nossa História</h3>
+                    <p>Fundada em 2010, a Elegance Boutique nasceu da paixão por moda exclusiva e atendimento personalizado. Trabalhamos com designers renomados e peças selecionadas a dedo para nossos clientes exigentes.</p>
                     
-                </div>
-
-                <!-- Plano PREMIUM -->
-                <div class="plan-card premium-card">
-                    <div class="plan-header" style="background: linear-gradient(135deg, #3a0ca3, #4361ee);">
-                        <div class="plan-title">E-Commerce</div>
-                        <div class="plan-price">De <span class="old-price">R$2.250</span> por <span class="new-price">R$900</span></div>
-                        <div class="plan-subtitle">Experiência completa de e-commerce</div>
-                    </div>
-                    <div class="plan-features">
-                        <div class="feature-item">
-                            <i class="fas fa-check-circle feature-icon"></i>
-                            <div class="feature-text"><strong>Tudo do plano One-Page</strong> + recursos avançados</div>
-                        </div>
-                        <div class="feature-item">
-                            <i class="fas fa-check-circle feature-icon"></i>
-                            <div class="feature-text"><strong>Catálogo:</strong> Serviço com 100 ou mais produtos/serviços</div>
-                        </div>
-                        <div class="feature-item">
-                            <i class="fas fa-check-circle feature-icon"></i>
-                            <div class="feature-text"><strong>Interação:</strong> Catálogo interativo com opção de favoritar e carrinho de compras</div>
-                        </div>
-                        <div class="feature-item">
-                            <i class="fas fa-check-circle feature-icon"></i>
-                            <div class="feature-text"><strong>Suporte:</strong>Suporte técnico gratuito para informações</div>
-                        </div>
-                    </div>
-                    <div class="plan-footer">
-                        <a href="https://wa.me/5583991816152?text=Ol%C3%A1%2C%20gostaria%20de%20solicitar%20uma%20proposta%20para%20o%20Site%20PREMIUM!" class="btn btn-premium" target="_blank">QUERO ESTE PLANO <i class="fas fa-arrow-right"></i></a>
-                        <a href="#premium-showcase" class="view-demo">Ver demonstração</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    
-    <!-- Site PRO Showcase -->
-    <section id="showcase" class="pro-showcase">
-        <div class="container">
-            <div class="section-title">
-                <h2>Nosso Site Padrão One-Page</h2>
-                <p>Conheça a interface elegante e funcional do nosso modelo PRO.</p>
-            </div>
-            <div class="pro-container">
-                <div class="showcase-description">
-                    <h3>Design moderno e eficiente</h3>
-                    <p>Nosso modelo One-Pgae foi desenvolvido para proporcionar uma excelente experiência ao usuário com foco em conversão. Veja abaixo como seu site pode ficar.</p>
-                    <ul class="showcase-features">
-                        <li><i class="fas fa-mobile-alt"></i> Layout 100% responsivo</li>
-                        <li><i class="fas fa-tachometer-alt"></i> Carregamento ultrarrápido</li>
-                        <li><i class="fas fa-thumbs-up"></i> Fácil de navegar</li>
-                    </ul>
-                    <a href="https://lipdzy.github.io/padr-odois2/" class="btn btn-secondary" target="_blank">VER PROTÓTIPO COMPLETO</a>
-                </div>
-                <div class="pro-img">
-                    <img src="https://i.postimg.cc/tRSjhydk/IMG-9705.jpg" alt="Site Pro - Exemplo" loading="lazy"> 
-                    <img src="https://i.postimg.cc/QMxPRmFk/IMG-9703.jpg" alt="Site Pro - Exemplo" loading="lazy">
-                </div>
-            </div>
-        </div>
-    </section>
-    
-    <!-- Site PORTFOLIO Showcase -->
-    <section id="portfolio-showcase" class="portfolio-showcase">
-        <div class="container">
-            <div class="section-title">
-                <h2>Site Padrão Portfolio</h2>
-                <p>Apresente seus trabalhos e conquiste novos clientes com um site profissional.</p>
-            </div>
-            <div class="showcase-container">
-                <div class="showcase-description portfolio-showcase-description">
-                    <h3>Destaque seu talento e conquistas</h3>
-                    <p>O modelo Portfolio é perfeito para profissionais e empresas que desejam exibir seus melhores trabalhos. Ideal para designers, arquitetos, fotógrafos, móveis planejados e qualquer negócio que precise mostrar a qualidade de seus produtos ou serviços.</p>
-                    <ul class="showcase-features">
-                        <li><i class="fas fa-building"></i> Seção de biografia da empresa/profissional</li>
-                        <li><i class="fas fa-images"></i> Galeria de fotos e projetos</li>
-                        <li><i class="fas fa-search"></i> SEO otimizado para atrair mais clientes</li>
-                        <li><i class="fas fa-paper-plane"></i> Formulário de contato integrado ao WhatsApp</li>
-                    </ul>
-                    <div class="prototype-link-container">
-                        <a href="https://lipdzy.github.io/siteportfolio/" class="btn btn-portfolio" target="_blank">VER PROTÓTIPO COMPLETO</a>
-                        <p class="prototype-description">Clique no botão acima para visualizar o site portfolio em funcionamento</p>
-                    </div>
-                </div>
-                <div class="portfolio-img">
-                    <img src="https://i.postimg.cc/mkPd2DvR/IMG-9742.png" alt="Site Portfolio - Exemplo Mobile" loading="lazy">
-                    <img src="https://i.postimg.cc/QCnd16Y1/IMG-9743.png" alt="Site Portfolio - Exemplo Desktop" loading="lazy">
-                </div>
-            </div>
-        </div>
-    </section>
-    
-    <!-- Site PREMIUM Showcase -->
-    <section id="premium-showcase" class="premium-showcase">
-        <div class="container">
-            <div class="section-title">
-                <h2>Site Padrão E-Commerce</h2>
-                <p>Nossa solução mais completa para e-commerce e catálogos interativos.</p>
-            </div>
-            <div class="showcase-description premium-showcase-description">
-                <h3>Experiência completa de e-commerce</h3>
-                <p>O modelo PREMIUM é perfeito para negócios que precisam de um catálogo extenso e funcionalidades avançadas. Ideal para lojas online e serviços que necessitam exibir muitos produtos.</p>
-                <ul class="showcase-features">
-                    <li><i class="fas fa-shopping-cart"></i> Carrinho de compras intuitivo</li>
-                    <li><i class="fas fa-heart"></i> Lista de favoritos</li>
-                    <li><i class="fas fa-filter"></i> Filtros de pesquisa avançados</li>
-                </ul>
-                <div class="prototype-link-container">
-                    <a href="https://lipdzy.github.io/padr-oum1/" class="btn btn-premium" target="_blank">VER PROTÓTIPO COMPLETO</a>
-                    <p class="prototype-description">Clique no botão acima para visualizar o site premium em funcionamento</p>
+                    <h3>Nossa Missão</h3>
+                    <p>Proporcionar uma experiência de compra única, com roupas que combinam sofisticação, conforto e qualidade superior, valorizando a individualidade e o estilo pessoal de cada cliente.</p>
+                    
+                    <h3>Nossos Valores</h3>
+                    <p>Exclusividade, qualidade, ética e sustentabilidade são os pilares que norteiam todos os nossos processos, desde a seleção dos fornecedores até o atendimento final.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Benefits Section -->
-    <section id="benefits" class="benefits">
+    <!-- Coleções Section -->
+    <section id="colecoes" class="colecoes">
         <div class="container">
-            <div class="section-title">
-                <h2>Por que ser nosso parceiro?</h2>
-                <p>Conheça os benefícios de ter um site desenvolvido pela Dezain Code.</p>
+            <div class="section-header">
+                <h2>Nossas Coleções</h2>
+                <div class="divider"></div>
             </div>
-            <div class="benefits-container">
-                <div class="benefits-text">
-                    <h3 class="benefits-title">Sites que geram resultados, não apenas visual</h3>
-                    <p class="benefits-desc">Ter um site hoje não é mais um diferencial — é essencial. </p>
-                    <p class="benefits-desc">Ao investir nos nossos serviços, você não contrata apenas um site bonito. Você adquire uma ferramenta de vendas que trabalha por você 24 horas por dia, 7 dias por semana.</p>
-                    <div class="counter-container">
-                        <div class="counter">
-                            <div class="counter-number">98%</div>
-                            <div class="counter-label">Clientes satisfeitos</div>
-                        </div>
-                        <div class="counter">
-                            <div class="counter-number">250+</div>
-                            <div class="counter-label">Projetos entregues</div>
-                        </div>
-                        <div class="counter">
-                            <div class="counter-number">5.0</div>
-                            <div class="counter-label">Avaliação média</div>
-                        </div>
+            <div class="colecoes-grid">
+                <div class="colecao-item">
+                    <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&h=500&q=80" alt="Coleção Primavera">
+                    <div class="colecao-info">
+                        <h3>Coleção Primavera</h3>
+                        <p>Peças leves e coloridas para dias ensolarados</p>
                     </div>
-                    <a href="https://wa.me/5583991816152?text=Ol%C3%A1%2C%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20os%20benef%C3%ADcios!" class="btn btn-primary" target="_blank">FALAR COM CONSULTOR <i class="fas fa-arrow-right"></i></a>
                 </div>
-                <div class="benefits-list">
-                    <div class="benefit-item">
-                        <div class="benefit-icon">
-                            <i class="fas fa-rocket"></i>
-                        </div>
-                        <div class="benefit-content">
-                            <h4>Aumento das vendas</h4>
-                            <p>Interfaces intuitivas e fluxos de navegação pensados para aumentar as conversões e fazer sua empresa vender mais, mesmo quando você está dormindo.</p>
-                        </div>
+                <div class="colecao-item">
+                    <img src="https://images.unsplash.com/photo-1475180098004-ca77a66827be?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&h=500&q=80" alt="Coleção Inverno">
+                    <div class="colecao-info">
+                        <h3>Coleção Inverno</h3>
+                        <p>Elegância e conforto para os dias mais frios</p>
                     </div>
-                    <div class="benefit-item">
-                        <div class="benefit-icon">
-                            <i class="fas fa-mobile-alt"></i>
-                        </div>
-                        <div class="benefit-content">
-                            <h4>100% Responsivo</h4>
-                            <p>Sites que funcionam perfeitamente em qualquer dispositivo, desde smartphones até desktops, garantindo a melhor experiência para seus clientes.</p>
-                        </div>
+                </div>
+                <div class="colecao-item">
+                    <img src="https://images.unsplash.com/photo-1492707892479-7bc8d5a4ee93?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&h=500&q=80" alt="Coleção Festa">
+                    <div class="colecao-info">
+                        <h3>Coleção Festa</h3>
+                        <p>Peças exclusivas para ocasiões especiais</p>
                     </div>
-                    <div class="benefit-item">
-                        <div class="benefit-icon">
-                            <i class="fas fa-headset"></i>
-                        </div>
-                        <div class="benefit-content">
-                            <h4>Suporte técnico</h4>
-                            <p>Equipe disponível para resolver qualquer problema e garantir que seu site esteja sempre funcionando perfeitamente.</p>
-                        </div>
+                </div>
+                <div class="colecao-item">
+                    <img src="https://images.unsplash.com/photo-1487222477894-8943e31ef7b2?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&h=500&q=80" alt="Coleção Executiva">
+                    <div class="colecao-info">
+                        <h3>Coleção Executiva</h3>
+                        <p>Sofisticação e estilo para o ambiente profissional</p>
                     </div>
-                    <div class="benefit-item">
-                        <div class="benefit-icon">
-                            <i class="fas fa-paint-brush"></i>
-                        </div>
-                        <div class="benefit-content">
-                            <h4>Design exclusivo</h4>
-                            <p>Visual moderno e profissional que transmite confiança e valoriza sua marca no mercado, criado especificamente para o seu negócio.</p>
-                        </div>
+                </div>
+                <div class="colecao-item">
+                    <img src="https://images.unsplash.com/photo-1487222477894-8943e31ef7b2?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&h=500&q=80" alt="Coleção Executiva">
+                    <div class="colecao-info">
+                        <h3>Coleção Executiva</h3>
+                        <p>Sofisticação e estilo para o ambiente profissional</p>
+                    </div>
+                </div>
+                <div class="colecao-item">
+                    <img src="https://images.unsplash.com/photo-1487222477894-8943e31ef7b2?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&h=500&q=80" alt="Coleção Executiva">
+                    <div class="colecao-info">
+                        <h3>Coleção Executiva</h3>
+                        <p>Sofisticação e estilo para o ambiente profissional</p>
+                    </div>
+                </div>
+                <div class="colecao-item">
+                    <img src="https://images.unsplash.com/photo-1487222477894-8943e31ef7b2?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&h=500&q=80" alt="Coleção Executiva">
+                    <div class="colecao-info">
+                        <h3>Coleção Executiva</h3>
+                        <p>Sofisticação e estilo para o ambiente profissional</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-<!-- Seção de Pagamento -->
-<section id="payment" class="payment">
-    <div class="container">
-        <div class="section-title">
-            <h2>Pagamento</h2>
-            <p>Métodos flexíveis e seguros para a contratação dos nossos serviços.</p>
-        </div>
-        <div class="payment-container">
-            <div class="payment-info">
-                <h3>Vantagens exclusivas</h3>
-                <div class="payment-features">
-                    <div class="payment-feature">
-                        <div class="feature-icon">
-                            <i class="fas fa-check-circle"></i>
-                        </div>
-                        <div class="feature-text">
-                            <h4>Pague apenas após aprovação</h4>
-                            <p>Pagamento somente após o site ser completamente testado e aprovado por você, garantindo total satisfação com o resultado final.</p>
-                        </div>
-                    </div>
-                    <div class="payment-feature">
-                        <div class="feature-icon">
-                            <i class="fas fa-credit-card"></i>
-                        </div>
-                        <div class="feature-text">
-                            <h4>Métodos flexíveis</h4>
-                            <p>Aceitamos pagamentos via PIX ou cartão de crédito em até 12x, proporcionando facilidade e segurança em todas as transações.</p>
-                        </div>
-                    </div>
-                    <div class="payment-feature">
-                        <div class="feature-icon">
-                            <i class="fas fa-file-contract"></i>
-                        </div>
-                        <div class="feature-text">
-                            <h4>Direitos autorais garantidos</h4>
-                            <p>Após a conclusão e pagamento, o cliente recebe todos os direitos autorais do site, incluindo o código fonte HTML e CSS completo.</p>
-                        </div>
-                    </div>
-                    <div class="payment-feature">
-                        <div class="feature-icon">
-                            <i class="fas fa-shield-alt"></i>
-                        </div>
-                        <div class="feature-text">
-                            <h4>Segurança garantida</h4>
-                            <p>Utilizamos sistemas de pagamento com criptografia avançada, garantindo total proteção dos seus dados financeiros.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="payment-process">
-                <h3>Como funciona o processo</h3>
-                <div class="process-steps">
-                    <div class="process-step">
-                        <div class="step-number">1</div>
-                        <div class="step-content">
-                            <h4>Aprovação do projeto</h4>
-                            <p>Após a conclusão do desenvolvimento, você recebe o link para testar todas as funcionalidades do site.</p>
-                        </div>
-                    </div>
-                    <div class="process-step">
-                        <div class="step-number">2</div>
-                        <div class="step-content">
-                            <h4>Confirmação e pagamento</h4>
-                            <p>Depois de aprovar o projeto, você receberá as instruções para realizar o pagamento através do método escolhido.</p>
-                        </div>
-                    </div>
-                    <div class="process-step">
-                        <div class="step-number">3</div>
-                        <div class="step-content">
-                            <h4>Entrega completa</h4>
-                            <p>Com o pagamento confirmado, você recebe todo o código-fonte e os direitos autorais do site são transferidos para você.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="payment-cta">
-                    <a href="https://wa.me/5583991816152?text=Ol%C3%A1%2C%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20formas%20de%20pagamento!" class="btn btn-primary" target="_blank">FALAR SOBRE PAGAMENTO <i class="fas fa-arrow-right"></i></a>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
 
-    <!-- Briefing Form Section -->
-    <section id="briefing" class="briefing">
+    <!-- Destaques Section com Setas de Navegação -->
+    <section class="destaques">
         <div class="container">
-            <div class="section-title">
-                <h2>Vamos começar seu projeto?</h2>
-                <p>Preencha o formulário abaixo para que possamos entender melhor as necessidades do seu negócio.</p>
+            <div class="section-header">
+                <h2>Destaques da Temporada</h2>
+                <div class="divider"></div>
             </div>
-            <div class="briefing-container">
-                <div class="briefing-info">
-                    <h3>Informações importantes</h3>
-                    <p>Para desenvolvermos o site ideal para o seu negócio, precisamos entender melhor suas necessidades e objetivos. Preencha o formulário e envie diretamente para nosso WhatsApp para iniciarmos seu projeto.</p>
-                    <div class="briefing-steps">
-                        <div class="briefing-step">
-                            <div class="step-number">1</div>
-                            <div class="step-content">
-                                <h4>Preencha o formulário</h4>
-                                <p>Responda as perguntas sobre seu negócio e objetivos</p>
-                            </div>
-                        </div>
-                        <div class="briefing-step">
-                            <div class="step-number">2</div>
-                            <div class="step-content">
-                                <h4>Envie pelo WhatsApp</h4>
-                                <p>Você será redirecionado para finalizar o envio</p>
-                            </div>
-                        </div>
-                        <div class="briefing-step">
-                            <div class="step-number">3</div>
-                            <div class="step-content">
-                                <h4>Receba sua proposta</h4>
-                                <p>Responderemos com uma proposta personalizada em até 24h</p>
-                            </div>
-                        </div>
+            <div class="destaques-container">
+                <!-- Setas de navegação -->
+                <div class="slider-nav-arrow slider-arrow-left">
+                    <i class="fas fa-chevron-left"></i>
+                </div>
+                <div class="slider-nav-arrow slider-arrow-right">
+                    <i class="fas fa-chevron-right"></i>
+                </div>
+                <div class="destaques-slider">
+                    <div class="destaque-item">
+                        <img src="https://images.unsplash.com/photo-1495385794356-15371f348c31?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&h=400&q=80" alt="Destaque 1">
+                        <h3>Vestido Serenity</h3>
+                        <p>Elegância clássica em tons suaves</p>
                     </div>
-                    <div class="briefing-cta">
-                        <div class="urgency-tag">
-                            <i class="fas fa-clock"></i> Preencha agora e ganhe 10% de desconto adicional!
-                        </div>
+                    <div class="destaque-item">
+                        <img src="https://images.unsplash.com/photo-1485968579580-b6d095142e6e?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&h=400&q=80" alt="Destaque 2">
+                        <h3>Conjunto Aurora</h3>
+                        <p>Modernidade e conforto em perfeita harmonia</p>
+                    </div>
+                    <div class="destaque-item">
+                        <img src="https://images.unsplash.com/photo-1552374196-1ab2a1c593e8?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&h=400&q=80" alt="Destaque 3">
+                        <h3>Blazer Milano</h3>
+                        <p>O poder da alfaiataria premium</p>
+                    </div>
+                    <div class="destaque-item">
+                        <img src="https://images.unsplash.com/photo-1552374196-1ab2a1c593e8?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&h=400&q=80" alt="Destaque 4">
+                        <h3>Blazer Milano</h3>
+                        <p>O poder da alfaiataria premium</p>
+                    </div>
+                    <div class="destaque-item">
+                        <img src="https://images.unsplash.com/photo-1552374196-1ab2a1c593e8?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&h=400&q=80" alt="Destaque 5">
+                        <h3>Blazer Milano</h3>
+                        <p>O poder da alfaiataria premium</p>
+                    </div>
+                    <div class="destaque-item">
+                        <img src="https://images.unsplash.com/photo-1552374196-1ab2a1c593e8?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&h=400&q=80" alt="Destaque 6">
+                        <h3>Blazer Milano</h3>
+                        <p>O poder da alfaiataria premium</p>
+                    </div>
+                    <div class="destaque-item">
+                        <img src="https://images.unsplash.com/photo-1552374196-1ab2a1c593e8?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&h=400&q=80" alt="Destaque 7">
+                        <h3>Blazer Milano</h3>
+                        <p>O poder da alfaiataria premium</p>
+                    </div>
+                    <div class="destaque-item">
+                        <img src="https://images.unsplash.com/photo-1552374196-1ab2a1c593e8?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&h=400&q=80" alt="Destaque 8">
+                        <h3>Blazer Milano</h3>
+                        <p>O poder da alfaiataria premium</p>
                     </div>
                 </div>
-                <div class="briefing-form">
-                    <form id="briefingForm" action="#" method="post">
+            </div>
+        </div>
+    </section>
+
+    <!-- Contato Section -->
+    <section id="contato" class="contato">
+        <div class="container">
+            <div class="section-header">
+                <h2>Entre em Contato</h2>
+                <div class="divider"></div>
+            </div>
+            <div class="contato-content">
+                <div class="contato-info">
+                    <h3>Informações</h3>
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>Av. Fashion, 1234, Centro</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <p>(83) 99181-6152</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <p>contato@eleganceboutique.com</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-clock"></i>
+                        <p>Seg-Sáb: 10h às 20h</p>
+                    </div>
+                    <div class="social-media">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+                <div class="contato-form">
+                    <form id="contact-form">
                         <div class="form-group">
-                            <label for="name">Nome completo*</label>
-                            <input type="text" id="name" name="name" class="form-control" required>
+                            <label for="nome">Nome</label>
+                            <input type="text" id="nome" name="nome" required>
                         </div>
                         <div class="form-group">
-                            <label for="email">E-mail*</label>
-                            <input type="email" id="email" name="email" class="form-control" required>
+                            <label for="telefone">Telefone</label>
+                            <input type="tel" id="telefone" name="telefone" required>
                         </div>
                         <div class="form-group">
-                            <label for="phone">WhatsApp*</label>
-                            <input type="tel" id="phone" name="phone" class="form-control" required>
+                            <label for="endereco">Endereço</label>
+                            <input type="text" id="endereco" name="endereco" required>
                         </div>
                         <div class="form-group">
-                            <label for="business">Nome do negócio*</label>
-                            <input type="text" id="business" name="business" class="form-control" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="segment">Segmento/Nicho*</label>
-                            <input type="text" id="segment" name="segment" class="form-control" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="objective">Objetivo principal do site*</label>
-                            <select id="objective" name="objective" class="form-control" required>
-                                <option value="">Selecione...</option>
-                                <option value="Vender produtos/serviços">Vender produtos/serviços</option>
-                                <option value="Captar leads/contatos">Captar leads/contatos</option>
-                                <option value="Apenas informativo">Apenas informativo</option>
-                                <option value="Site institucional">Site institucional</option>
-                                <option value="Outro">Outro</option>
+                            <label for="pagamento">Forma de Pagamento</label>
+                            <select id="pagamento" name="pagamento" required>
+                                <option value="">Selecione uma opção</option>
+                                <option value="credito">Cartão de Crédito</option>
+                                <option value="debito">Cartão de Débito</option>
+                                <option value="pix">PIX</option>
+                                <option value="dinheiro">Dinheiro</option>
                             </select>
                         </div>
                         <div class="form-group">
-                            <label for="plan">Qual plano tem interesse?*</label>
-                            <select id="plan" name="plan" class="form-control" required>
-                                <option value="">Selecione...</option>
-                                <option value="Site Padrão PRO">One-Page</option>
-                                <option value="Site Padrão PORTFOLIO">Portfolio</option>
-                                <option value="Site Padrão PREMIUM">E-commerce</option>
-                                <option value="Projeto Personalizado">Projeto Personalizado</option>
-                                <option value="Não sei ainda">Não sei ainda</option>
-                            </select>
+                            <label for="mensagem">Mensagem</label>
+                            <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
                         </div>
-                        <div class="form-group">
-                            <label for="message">Informações adicionais</label>
-                            <textarea id="message" name="message" class="form-control" rows="4"></textarea>
-                        </div>
-                        <div class="form-group">
-                            <button type="submit" class="btn btn-primary btn-block">ENVIAR PARA WHATSAPP <i class="fab fa-whatsapp"></i></button>
-                        </div>
-                        <div class="form-notice">
-                            <i class="fas fa-shield-alt"></i> Seus dados estão seguros e serão usados apenas para contato.
-                        </div>
+                        <button type="submit" class="btn btn-submit">Enviar</button>
                     </form>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- FAQ Section Completa com Três Novas Perguntas -->
-<section id="faq" class="faq">
-    <div class="container">
-        <div class="section-title">
-            <h2>Dúvidas Frequentes</h2>
-            <p>Respostas para as perguntas mais comuns sobre nossos serviços.</p>
-        </div>
-        <div class="faq-container">
-            <div class="faq-item active">
-                <div class="faq-question">
-                    Como editar o catálogo?
-                    <i class="fas fa-chevron-down"></i>
-                </div>
-                <div class="faq-answer" style="max-height: 300px;">
-                    <div class="faq-answer-content">
-                        Nós enviamos um tutorial rápido de como editar pelo computador ou celular. O processo é simples e intuitivo, permitindo que você atualize seu catálogo quando necessário, sem depender de nossa equipe para pequenas alterações.
-                    </div>
-                </div>
-            </div>
-            <div class="faq-item">
-                <div class="faq-question">
-                    O layout do meu site vai ser idêntico ao de outras lojas?
-                    <i class="fas fa-chevron-down"></i>
-                </div>
-                <div class="faq-answer">
-                    <div class="faq-answer-content">
-                        Não! Cada empresa tem um visual exclusivo. Graças a nossa equipe de desenvolvedores que nos entrega um novo visual semanalmente, garantimos que seu site será único e personalizado de acordo com a identidade da sua marca.
-                    </div>
-                </div>
-            </div>
-            <div class="faq-item">
-                <div class="faq-question">
-                    Quanto tempo leva para desenvolver um site?
-                    <i class="fas fa-chevron-down"></i>
-                </div>
-                <div class="faq-answer">
-                    <div class="faq-answer-content">
-                        O tempo de desenvolvimento varia conforme a complexidade do projeto. Sites PRO geralmente ficam prontos em 7 a 14 dias, enquanto sites PREMIUM podem levar de 14 a 30 dias, dependendo do volume de produtos e personalizações necessárias.
-                    </div>
-                </div>
-            </div>
-            <div class="faq-item">
-                <div class="faq-question">
-                    O site funcionará bem em dispositivos móveis?
-                    <i class="fas fa-chevron-down"></i>
-                </div>
-                <div class="faq-answer">
-                    <div class="faq-answer-content">
-                        Sim! Todos os nossos sites são desenvolvidos com design responsivo, garantindo uma experiência perfeita em smartphones, tablets e computadores. Na era mobile, isso é essencial para o sucesso do seu negócio online.
-                    </div>
-                </div>
-            </div>
-            <div class="faq-item">
-                <div class="faq-question">
-                    Eu tenho mais de uma atendente, eu preciso pagar para adicionar mais um link de WhatsApp?
-                    <i class="fas fa-chevron-down"></i>
-                </div>
-                <div class="faq-answer">
-                    <div class="faq-answer-content">
-                        Não precisa! Você pode escolher a quantidade de redes sociais que você quiser, incluindo WhatsApp, Instagram, Facebook e localização. Adicionamos quantos links de WhatsApp você precisar para cada atendente sem custos adicionais.
-                    </div>
-                </div>
-            </div>
-            <div class="faq-item">
-                <div class="faq-question">
-                    Eu preciso fazer pagamentos de forma recorrente?
-                    <i class="fas fa-chevron-down"></i>
-                </div>
-                <div class="faq-answer">
-                    <div class="faq-answer-content">
-                        Não, ao comprar o site ele se torna 100% autoral. Fazemos apenas um pagamento único e, após a aprovação e finalização, você se torna o proprietário completo do site, sem mensalidades ou taxas recorrentes.
-                    </div>
-                </div>
-            </div>
-            <div class="faq-item">
-                <div class="faq-question">
-                    Se eu precisar atualizar informações do site depois de alguns meses, isso tem custo adicional?
-                    <i class="fas fa-chevron-down"></i>
-                </div>
-                <div class="faq-answer">
-                    <div class="faq-answer-content">
-                        Não! Realizamos alterações em números de contato, horários de funcionamento, cores e outras informações básicas sem nenhum custo adicional além do pagamento inicial. Nosso compromisso é garantir que seu site permaneça atualizado conforme as necessidades do seu negócio.
-                    </div>
-                </div>
-            </div>
-            <div class="faq-item">
-                <div class="faq-question">
-                    Não disponho de tempo ou pessoal para gerenciar as informações dos produtos e coleções. Vocês oferecem esse serviço?
-                    <i class="fas fa-chevron-down"></i>
-                </div>
-                <div class="faq-answer">
-                    <div class="faq-answer-content">
-                        Sim! Dispomos de uma equipe especializada que pode realizar a gestão completa do seu catálogo de produtos e coleções. Este serviço está disponível por uma taxa mensal de R$ 25,00, garantindo que seu catálogo esteja sempre atualizado sem que você precise dedicar tempo ou recursos internos para essa tarefa.
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="faq-cta">
-            <p>Tem mais dúvidas? Fale diretamente com nossa equipe!</p>
-            <a href="https://wa.me/5583991816152?text=Ol%C3%A1%2C%20tenho%20algumas%20d%C3%BAvidas%20sobre%20seus%20servi%C3%A7os!" class="btn btn-primary" target="_blank">FALAR COM ESPECIALISTA <i class="fas fa-arrow-right"></i></a>
-        </div>
-    </div>
-</section>
-
+    <!-- Footer -->
     <footer>
-        <div class="container footer-container">
-            <div class="footer-col">
-                <h3>Dezain Code</h3>
-                <p>Transformando visões em resultados digitais com sites modernos, responsivos e otimizados para vendas.</p>
-                <div class="social-links">
-                    <a href="https://www.instagram.com/arthur.fellp/" class="social-link" target="_blank"><i class="fab fa-instagram"></i></a>
-                    <a href="https://wa.me/5583991816152" class="social-link" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>Elegance</h2>
+                    <p>Boutique</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Links Rápidos</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#sobre">Sobre</a></li>
+                        <li><a href="#colecoes">Coleções</a></li>
+                        <li><a href="#contato">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="footer-newsletter">
+                    <h3>Newsletter</h3>
+                    <p>Receba nossas novidades e promoções exclusivas</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Seu e-mail">
+                        <button type="submit">Assinar</button>
+                    </form>
                 </div>
             </div>
-            <div class="footer-col">
-                <h3>Serviços</h3>
-                <ul class="footer-links">
-                    <li><a href="#plans">Site One-Page</a></li>
-                    <li><a href="#plans">Site Portfolio</a></li>
-                    <li><a href="#plans">Site E-Commerce</a></li>
-                    <li><a href="#briefing">Projetos Personalizados</a></li>
-                    <li><a href="#briefing">Consultoria Web</a></li>
-                </ul>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Elegance Boutique. Todos os direitos reservados.</p>
             </div>
-            <div class="footer-col">
-                <h3>Links Rápidos</h3>
-                <ul class="footer-links">
-                    <li><a href="#home">Início</a></li>
-                    <li><a href="#showcase">Portfolio</a></li>
-                    <li><a href="#benefits">Benefícios</a></li>
-                    <li><a href="#faq">Dúvidas Frequentes</a></li>
-                </ul>
-            </div>
-            <div class="footer-col">
-                <h3>Contato</h3>
-                <p><i class="fas fa-map-marker-alt"></i> João Pessoa - Paraíba</p>
-                <p><i class="fas fa-phone"></i> <a href="tel:+5583993690482">(83) 99369-0482</a></p>
-                <p><a href="https://wa.me/5583993690482" class="btn btn-whatsapp" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a></p>
-            </div>
-        </div>
-        <div class="copyright">
-            &copy; 2025 Dezain Code. Todos os direitos reservados.
         </div>
     </footer>
 
-    <!-- JavaScript -->
+    <!-- WhatsApp Button -->
+    <a href="https://wa.me/5583991816152" class="whatsapp-btn" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+    
+    <!-- Tooltip para imagens clicáveis -->
+    <div id="tooltip" class="tooltip">Clique para conversar no WhatsApp</div>
+
     <script src="script.js"></script>
 </body>
 </html>
